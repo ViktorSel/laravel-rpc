@@ -1,0 +1,29 @@
+{
+    "name": "icecloud/rpc-client",
+    "type": "library",
+    "authors": [
+        {
+            "name": "a.kazakov",
+            "email": "a.kazakov@iceberg.ru"
+        }
+    ],
+    "require": {},
+    "description": "",
+    "autoload": {
+        "psr-4": {
+            "IceCloud\\RpcClient\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "IceCloud\\RpcClient\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "IceCloud\\RpcClient\\Providers\\IceCloudRpcClientProvider"
+            ]
+        }
+    }
+}

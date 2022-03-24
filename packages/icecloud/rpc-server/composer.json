@@ -1,0 +1,39 @@
+{
+    "name": "icecloud/rpc-server",
+    "description": "JSON RPC 2.0 Server",
+    "version": "1.2.3",
+    "type": "library",
+    "authors": [
+        {
+            "name": "a.kazakov",
+            "email": "a.kazakov@iceberg.ru"
+        }
+    ],
+
+    "require": {
+        "php": "^7.4",
+        "brick/varexporter": "^0.3.5",
+        "symfony/http-foundation": "^5.1.4"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "IceCloud\\RpcServer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "IceCloud\\RpcServer\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "IceCloud\\RpcServer\\Providers\\IceCloudRpcServerProvider"
+            ],
+            "aliases": {
+                "RpcInputExtractor": "IceCloud\\RpcServer\\Facades\\RpcInputExtractor"
+            }
+        }
+    }
+}
